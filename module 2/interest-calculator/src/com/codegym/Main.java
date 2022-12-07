@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Nhập vào tháng gữi: ");
         month = scanner.nextInt();
 
-        double totalInterest = money * (interestRate/100)/12 * month;
+        double totalInterest = money * (1 +(interestRate/100)/12 * month);
         System.out.println("Tổng lãi suất là: " + totalInterest);
     }
 }
