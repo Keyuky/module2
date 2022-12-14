@@ -33,15 +33,36 @@ package com.codegym;
 //        System.out.println(rectangle);
 //    }
 //}
+//public class Main {
+//    public static void main(String[] args) {
+//        Square square = new Square();
+//        System.out.println(square);
+//
+//        square = new Square(2.3);
+//        System.out.println(square);
+//
+//        square = new Square(5.8, "yellow", true);
+//        System.out.println(square);
+//    }
+//}
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        Square square = new Square();
-        System.out.println(square);
+        ComparableCircle[] circles = new ComparableCircle[3];
+        circles[0] = new ComparableCircle(3.6);
+        circles[1] = new ComparableCircle();
+        circles[2] = new ComparableCircle(3.5, "indigo", false);
 
-        square = new Square(2.3);
-        System.out.println(square);
+        System.out.println("Pre-sorted:");
+        for (ComparableCircle circle : circles) {
+            System.out.println(circle);
+        }
 
-        square = new Square(5.8, "yellow", true);
-        System.out.println(square);
+        Arrays.sort(circles);
+
+        System.out.println("After-sorted:");
+        for (ComparableCircle circle : circles) {
+            System.out.println(circle);
+        }
     }
 }
