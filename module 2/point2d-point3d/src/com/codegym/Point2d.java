@@ -1,7 +1,7 @@
 package com.codegym;
 
 public class Point2d {
-    float x = 0.0f;
+    float x = 0.0f       ;
     float y = 0.0f;
 
     public Point2d(){
